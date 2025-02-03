@@ -44,7 +44,7 @@ const Home = () => {
 
 
   return (
-    <div className='bg-slate-200 w-full min-h-screen relative'>
+    <div className='bg-orange-200 w-full min-h-screen relative'>
       <Navbar />
       {(!input ? <div className='flex justify-center md:gap-14  gap-3 items-center px-4 flex-wrap'>
         {Categories.map((item, idx) => (
