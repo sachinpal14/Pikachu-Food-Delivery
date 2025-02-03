@@ -44,14 +44,14 @@ const Home = () => {
 
 
   return (
-    <div className='bg-orange-200 w-full min-h-screen relative'>
+    <div className='bg-[#ffe8d2] w-full min-h-screen relative'>
       <Navbar />
       {(!input ? <div className='flex justify-center md:gap-14  gap-3 items-center px-4 flex-wrap'>
         {Categories.map((item, idx) => (
           <div
             key={idx}
             onClick={() => { filter(item.name) }}
-            className='bg-white rounded shadow-xl px-4 py-2 cursor-pointer hover:bg-green-200  transition-all duration-150 ' >
+            className='bg-white rounded shadow-xl px-4 py-2 cursor-pointer hover:bg-green-200 active:scale-80 transition-all duration-150 active:bg-green-200' >
             <h1> {item.icon}</h1>
             <h1 className='text-center md:text-xl capitalize text-sm'>{item.name}</h1>
           </div>
